@@ -1,1 +1,1 @@
-# Desafio 1.1 HTML-CSS - IT ACADEMY - JÔNATHAS CABÊÇO.
+# Desafio 1.2 HTML-CSS - IT ACADEMY - JÔNATHAS CABÊÇO.
