@@ -1,0 +1,161 @@
+/* Configurações gerais*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+.paletadecores {
+    color: #212121;
+    color: red;
+    color: #F9A825;
+}
+
+:root {
+    font-size: 100%;
+    --cor-cabeçalho-rodapé: #212121;
+    --cor-botão-cabeçalho: #f9a825;
+    --font-padrao: helvetica;
+    --cor-font-padrao: white; 
+}
+
+.flex {
+    display: flex;
+}
+
+/* Configurações cabeçalho*/
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-cabeçalho-rodapé);
+    margin: auto;   
+}
+
+h1 {
+    font-family: var(--font-padrao);
+    color: var(--cor-font-padrao);
+    font-size: clamp(0.8rem, 2.0vh, 3rem);
+    margin-left: 10%;
+    width: 50%;
+    align-items: center;
+ }
+
+nav {
+    width: 50%;
+    margin-right: 10%;
+    align-items: right;
+    justify-content: right;
+    padding: 0;
+}
+
+nav ul li {
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-family: var(--font-padrao);
+    color: var(--cor-font-padrao);
+    width: 7rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a#home  {
+    background-color: var(--cor-botão-cabeçalho);
+    border-radius: 15vh;
+}
+
+a:hover {
+    background-color: var(--cor-botão-cabeçalho);
+    color: var(--cor-font-padrao);
+    border-radius: 15vh;
+}
+
+ 
+ /* Configurações corpo */
+
+ main {
+    width: 100%;
+    height: 100%;
+}
+
+ section {
+     width: 100%;
+     height: auto;
+ }
+
+
+ /* Configurações caixa texto e email */
+
+  div#login-container {
+    width: 30rem;
+    height: 12.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    padding: 15px 10px;    
+    border: 1px solid black;
+ }
+
+ div#login-container > div#texto-container {
+     width: 30rem;
+     height: auto;     
+     justify-content: center;
+     align-items: center;
+     padding: 5px;
+     position: flex;
+ }
+
+ div#login-container > div#caixaemail-container {
+     width: 15rem;
+     height: 100%;     
+     border-left: dotted 1px;         
+     padding-left: 5px;
+     align-items: center;
+     justify-content: left;
+ } 
+
+ div.col {
+     display: flex;
+     flex-direction: column;
+     width: 30rem;
+     height: auto;
+     margin-bottom: 10px;    
+     
+ }
+ 
+ div.col input:not(:last-child) {
+     margin-bottom: 15px
+ }
+
+
+ /* Configurações rodapé*/
+
+ footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor-cabeçalho-rodapé);
+    position: fixed;
+    bottom: 0;
+}
+
+footer > #textorodape {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-padrao);
+    color: var(--cor-font-padrao);
+    font-size: 1.0rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+ 
+} 
